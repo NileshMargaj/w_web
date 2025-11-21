@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .parent {
+            width: 100%;
+            height: 1000px;
+            /* border: 2px solid; */
+            display: flex;
+            background-image: url(https://t4.ftcdn.net/jpg/08/11/15/37/360_F_811153701_7gPmVssUpwljTVrE7vlMDzfINZqQuJY6.jpg);
+            background-size: cover;
+            background-position: center;
+            /* position: relative; */
+
+        }
+
+        .nav {
+            height: 70px;
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+        }
+
+        .navc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(46, 46, 46);
+            gap: 20px;
+        }
+
+        .nav img {
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+
+        }
+
+        .navl i {
+            display: none;
+        }
+
+        .left {
+            width: 22%;
+            height: 600px;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .left p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .right {
+            width: 100%;
+            height: 1000px;
+            /* border: 2px solid red; */
+        }
+
+        .top {
+            height: 120px;
+            width: 100%;
+            /* border: 2px solid blue; */
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top p {
+            font-size: 70px;
+            margin-left: 60px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+
+        .top span {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+        }
+
+        .down {
+            height: 850px;
+            width: 100%;
+            /* border: 2px solid orange; */
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* overflow: scroll; */
+            padding-top: 30px;
+            /* background-color: rgb(216, 237, 244); */
+
+        }
+
+        .box {
+            height: 350px;
+            width: 400px;
+            /* border: 2px solid yellow; */
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            background-color: white;
+
+            /* background-size: cover; */
+        }
+
+        .box img {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .box p {
+            margin-bottom: 15px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width:576px) {
+            .box:hover {
+                transform: scale(1.05);
+            }
+
+            .box {
+                width: 350px;
+            }
+
+            .box img {
+                width: 350px;
+                /* height: 250px; */
+            }
+
+            .top p {
+                padding-bottom: 30px;
+                margin-left: 30px;
+            }
+
+            .parent {
+                height: 2400px;
+                width: 100%;
+            }
+
+            .nav {
+                background-color: white;
+            }
+
+            .navl p {
+                display: none;
+            }
+
+            .navl i {
+                display: block;
+            }
+        }
+
+        @media (max-width:993px) {}
+
+        @media (min-width:993px) {}
+    </style>
+</head>
+
+<body>
+    <section class="nav">
+        <div class="navl">
+            <img src="https://media.istockphoto.com/id/2177914122/vector/150-year-anniversary-logo-150-logo-150-anniversary-150th-color-vector-template-design.jpg?s=612x612&w=0&k=20&c=Lsv-F4aFxZXNrYn2mFcoaaTWK7Rf3gm7jvQ6MrbIv8M="
+                alt="">
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./watches.html">Watches</a></p>
+            <p><a href="./services.html">Services</a></p>
+            <p><a href="#">>Stores</a></p>
+        </div>
+        <div class="navc">
+            <h1>Rolex</h1>
+        </div>
+        <div class="navr">
+            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </section>
+    <div class="parent">
+        <!-- <div class="left">
+            <div class="center">
+
+                <p>Hi-Care Programme<p>
+                <p>Maintenance Services<p>
+                <p>Where to service<p>
+                <p>Extend your Warranty<p>
+                <p>AP Coverage Service<p>
+                <p>Repair pick up<p>
+            </div>
+        </div> -->
+        <div class="right">
+            <div class="top">
+                <p>OUR <span>SERVICES</span></p>
+            </div>
+            <div class="down">
+                <div class="box">
+                    <img src="a1.png" alt="">
+                    <p>All the support you need, from the experts who know your watch best.</p>
+                    <h3>Hi-Care Programme</h3>
+                </div>
+                <div class="box">
+                    <img src="a2.png" alt="">
+                    <p>Each watch marks the beginning of a relationship dedicated to exclusive, personalised services.
+                    </p>
+                    <h3>Maintenance Services</h3>
+                </div>
+                <div class="box">
+                    <img src="a3.png" alt="">
+                    <p>Taking proper care of your watch and providing it with periodical check-ups will help you
+                        maintain its accuracy.</p>
+                    <h3>Caring for your watch</h3>
+                </div>
+                <div class="box">
+                    <img src="https://images.surferseo.art/39bddeb8-4012-4450-aa1d-ad93216463bf.jpeg" alt="">
+                    <p>Audemars Piguet has built a global network of skilled watchmakers and polishers who ensure local
+                        services.</p>
+                    <h3>After sales network</h3>
+                </div>
+                <div class="box">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5b213f95506fbec9b54e014c/b424e2b3-94fd-4026-a022-15db8e804f6f/DSC04675.JPG"
+                        alt="">
+                    <p>All the support you need, from the experts who know your watch best.</p>
+                    <h3>Extend your Warranty</h3>
+                </div>
+                <div class="box">
+                    <img src="a4.png" alt="">
+                    <p>Our shops distribution is the trusted destination where your watch receives expert care to every
+                        detail.</p>
+                    <h3>Where to service</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid  bg-light text-dark pt-4 pb-3">
+        <div class="row text-center text-md-start">
+            <div class="col-12 col-lg-3 p-3">
+                <div class="d-flex align-items-center">
+
+                    <h3 class="fw-bold">Rol<span class="text-danger">ex</span></h3>
+                </div>
+                <div class="fs-4 mt-3">
+                    <i class="fa-brands fa-google me-2"></i>
+                    <i class="fa-brands fa-twitter me-2"></i>
+                    <i class="fa-brands fa-instagram me-2"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <p class="fw-bold mt-4">500 Terry Francine Street, SF, New Delhi, India</p>
+            </div>
+
+            <div class="col-6 col-lg-3 p-3">
+                <p class="fw-bold">Get to Know Us</p>
+                <p>About Us</p>
+                <p>Career</p>
+                <p>Press Releases</p>
+                <p>Gift a Smile</p>
+            </div>
+
+            <div class="col-6 col-lg-3 p-3">
+                <p class="fw-bold">Connect With Us</p>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+            </div>
+
+            <div class="col-12 col-lg-3 p-3">
+                <p class="fw-bold">Let Us Help You</p>
+                <p>100% Service Guarantee</p>
+                <p>Your Account</p>
+                <p>Return Center</p>
+                <p>Help</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <p class="text-center mb-0">&copy; 2025 by Kaustubh. Created with Bootstrap.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

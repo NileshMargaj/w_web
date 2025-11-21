@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.nav img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+
+.navr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+    gap: 20px;
+}
+
+
+.navl i {
+    display: none;
+}
+
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.list li a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+
+.list li a:hover {
+    color: #0f6eff;       
+    transform: translateY(-2px); 
+}
+.banner{
+    height: 80vh;
+    width: 100%;
+    background-image: url("https://t4.ftcdn.net/jpg/08/11/15/37/360_F_811153701_7gPmVssUpwljTVrE7vlMDzfINZqQuJY6.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bannertxt {
+    position: absolute;
+    top: 20%;        
+    left: 70px;
+    color: white;
+}
+
+.bannertxt p {
+    font-size: 70px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 0.9;     
+}
+
+.txtdn {
+    position: absolute;
+    top: 55%;            
+    left: 70px;
+    width: 40%;  
+    margin-top: 20px;        
+}
+
+.txtdn p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.video{
+    width: 100%;
+    overflow: hidden;
+}
+.mvd{
+    width: 100%;
+    height: 440px;
+    display: block;
+    object-fit: cover;
+    position: relative;
+}
+
+@media(max-width:576px){
+    .nav{
+        background-color: white;
+    }
+
+    
+    .list {
+        display: none;
+    }
+
+    
+    .navl i{
+        display: block;
+        font-size: 24px;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .txtdn{
+        top: 45%;
+        left: 16px;
+    }
+
+    .bannertxt p{
+        left: 19px;
+        font-size: 40px;
+    }
+
+    .bannertxt{
+        left: 24px;
+    }
+
+    .txtdn p{
+        font-size: 10px;
+    }
+
+    .banner{
+        height: 60vh;
+    }
+}
+
+
+@media(min-width:577px){
+
+}
+@media(min-width:993px){
+
+}
